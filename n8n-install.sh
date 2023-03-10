@@ -50,5 +50,5 @@ sudo sed -i 's|POSTGRES_NON_ROOT_USER=.*|POSTGRES_NON_ROOT_USER=n8nuser|; s|POST
 # Set N8N_EMAIL_MODE, N8N_SMTP_HOST, N8N_SMTP_PORT, N8N_SMTP_SSL, N8N_SMTP_USER, N8N_SMTP_PASS, and N8N_SMTP_SENDER
 sudo sed -i 's|N8N_EMAIL_MODE=.*|N8N_EMAIL_MODE=smtp|; s|N8N_SMTP_HOST=.*|N8N_SMTP_HOST=smtp.mailersend.net|; s|N8N_SMTP_PORT=.*|N8N_SMTP_PORT=587|; s|N8N_SMTP_SSL=.*|N8N_SMTP_SSL=false|; s|N8N_SMTP_USER=.*|N8N_SMTP_USER=user-from-mailersend@yourdomainname.com|; s|N8N_SMTP_PASS=.*|N8N_SMTP_PASS=pass-from-mailersend|; s|N8N_SMTP_SENDER=.*|N8N_SMTP_SENDER=n8n@yourdomainname.com|' /opt/n8n-docker/docker-compose.yml
 
-echo "Installation complete"
+echo "Installation complete Have Fun Automating"
 echo "Please make sure you have support for your server contact at support@pegas.io or fill out our contact from at https://pegas.io/contact/"

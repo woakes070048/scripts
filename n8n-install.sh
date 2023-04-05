@@ -15,13 +15,8 @@ echo "                    \__\/                                                 
 echo ""
 echo "Installation script for n8n by Pegas Technology Solutions"
 echo "This script will install Docker and all prerequisites for n8n installation"
+echo "Have you set up your domain name automate.yourdomainname.com? If you cant ping the sever dont run the script until you can"
 
-# Check if domain name is set up
-read -p "Have you set up your domain name automate.yourdomainname.com? (y/n) " domain
-if [ "$domain" != "y" ]; then
-  echo "Please set up your domain name and re-run the script"
-  exit 1
-fi
 # Update and install Docker
 sudo apt-get update
 sudo apt-get install -y docker.io
